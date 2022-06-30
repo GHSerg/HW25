@@ -31,21 +31,21 @@ class MagicTableViewCell: UITableViewCell {
         return stackView
     }()
     
-    private lazy var stackViewHorizontal: UIStackView = {
-        let stackView = UIStackView()
-        stackView.axis = .horizontal
-        stackView.spacing = 5
-        stackView.alignment = .leading
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        return stackView
-    }()
-    
+//    private lazy var stackViewHorizontal: UIStackView = {
+//        let stackView = UIStackView()
+//        stackView.axis = .horizontal
+//        stackView.spacing = 5
+//        stackView.alignment = .leading
+//        stackView.translatesAutoresizingMaskIntoConstraints = false
+//        return stackView
+//    }()
+//    
     
     private lazy var name: UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
         label.textAlignment = .left
-        label.font = .systemFont(ofSize: 18)
+        label.font = .systemFont(ofSize: 30)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -125,9 +125,9 @@ class MagicTableViewCell: UITableViewCell {
         contentView.addSubview(stackViewVertical)
        // stackViewHorizontal.addArrangedSubview(iconImageView)
         stackViewVertical.addArrangedSubview(name)
-        stackViewHorizontal.addArrangedSubview(type)
-        stackViewHorizontal.addArrangedSubview(setName)
-        stackViewVertical.addArrangedSubview(stackViewHorizontal)
+        stackViewVertical.addArrangedSubview(type)
+        stackViewVertical.addArrangedSubview(setName)
+       // stackViewVertical.addArrangedSubview(stackViewHorizontal)
     }
     
     required init?(coder: NSCoder) {
