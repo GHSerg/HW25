@@ -25,8 +25,17 @@ class MagicTableViewCell: UITableViewCell {
     private lazy var stackViewVertical: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
+        stackView.spacing = 10
+        stackView.alignment = .leading
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
+    }()
+    
+    private lazy var stackViewHorizontal: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .horizontal
         stackView.spacing = 5
-        stackView.alignment = .center
+        stackView.alignment = .leading
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
@@ -116,8 +125,9 @@ class MagicTableViewCell: UITableViewCell {
         contentView.addSubview(stackViewVertical)
        // stackViewHorizontal.addArrangedSubview(iconImageView)
         stackViewVertical.addArrangedSubview(name)
-        stackViewVertical.addArrangedSubview(type)
-        stackViewVertical.addArrangedSubview(setName)
+        stackViewHorizontal.addArrangedSubview(type)
+        stackViewHorizontal.addArrangedSubview(setName)
+        stackViewVertical.addArrangedSubview(stackViewHorizontal)
     }
     
     required init?(coder: NSCoder) {
@@ -157,9 +167,9 @@ class MagicTableViewCell: UITableViewCell {
     // MARK: - Configure
     
     func configure(with cell: String) {
-        name.text = cell + "1"
-        type.text = cell + "2"
-        setName.text = cell + "3"
+        name.text = cell + "name"
+        type.text = cell + "type"
+        setName.text = cell + "setName"
         
 //        iconImageView.image = UIImage(named: cell.imageCell)
 //        nameLabel.text = cell.textCell
