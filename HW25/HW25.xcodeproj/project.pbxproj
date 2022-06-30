@@ -12,8 +12,7 @@
 		9DBD4835286D8A3400CA6B6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD4834286D8A3400CA6B6D /* ViewController.swift */; };
 		9DBD483A286D8A3500CA6B6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBD4839286D8A3500CA6B6D /* Assets.xcassets */; };
 		9DBD483D286D8A3500CA6B6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DBD483B286D8A3500CA6B6D /* LaunchScreen.storyboard */; };
-		9DBD4845286D95CC00CA6B6D /* MagicTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD4844286D95CC00CA6B6D /* MagicTableModel.swift */; };
-		9DBD4847286D96F600CA6B6D /* MagicJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD4846286D96F600CA6B6D /* MagicJSONModel.swift */; };
+		9DBD4845286D95CC00CA6B6D /* MagicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD4844286D95CC00CA6B6D /* MagicModel.swift */; };
 		9DBD4849286D97FC00CA6B6D /* MagicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD4848286D97FC00CA6B6D /* MagicTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,8 +24,7 @@
 		9DBD4839286D8A3500CA6B6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DBD483C286D8A3500CA6B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DBD483E286D8A3500CA6B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DBD4844286D95CC00CA6B6D /* MagicTableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicTableModel.swift; sourceTree = "<group>"; };
-		9DBD4846286D96F600CA6B6D /* MagicJSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicJSONModel.swift; sourceTree = "<group>"; };
+		9DBD4844286D95CC00CA6B6D /* MagicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicModel.swift; sourceTree = "<group>"; };
 		9DBD4848286D97FC00CA6B6D /* MagicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicTableViewCell.swift; sourceTree = "<group>"; };
 		CAD40A4DBA2D48F99D9AE8AC /* Pods-HW25.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW25.debug.xcconfig"; path = "Target Support Files/Pods-HW25/Pods-HW25.debug.xcconfig"; sourceTree = "<group>"; };
 		D4A1AB308177CE594C10C209 /* Pods_HW25.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HW25.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,7 +48,6 @@
 				CAD40A4DBA2D48F99D9AE8AC /* Pods-HW25.debug.xcconfig */,
 				6248B42D13FE7D972E626C90 /* Pods-HW25.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -77,12 +74,11 @@
 			children = (
 				9DBD4830286D8A3400CA6B6D /* AppDelegate.swift */,
 				9DBD4834286D8A3400CA6B6D /* ViewController.swift */,
+				9DBD4844286D95CC00CA6B6D /* MagicModel.swift */,
+				9DBD4848286D97FC00CA6B6D /* MagicTableViewCell.swift */,
 				9DBD4839286D8A3500CA6B6D /* Assets.xcassets */,
 				9DBD483B286D8A3500CA6B6D /* LaunchScreen.storyboard */,
 				9DBD483E286D8A3500CA6B6D /* Info.plist */,
-				9DBD4844286D95CC00CA6B6D /* MagicTableModel.swift */,
-				9DBD4846286D96F600CA6B6D /* MagicJSONModel.swift */,
-				9DBD4848286D97FC00CA6B6D /* MagicTableViewCell.swift */,
 			);
 			path = HW25;
 			sourceTree = "<group>";
@@ -209,11 +205,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DBD4845286D95CC00CA6B6D /* MagicTableModel.swift in Sources */,
+				9DBD4845286D95CC00CA6B6D /* MagicModel.swift in Sources */,
 				9DBD4835286D8A3400CA6B6D /* ViewController.swift in Sources */,
 				9DBD4849286D97FC00CA6B6D /* MagicTableViewCell.swift in Sources */,
 				9DBD4831286D8A3400CA6B6D /* AppDelegate.swift in Sources */,
-				9DBD4847286D96F600CA6B6D /* MagicJSONModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
