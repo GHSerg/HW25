@@ -9,7 +9,6 @@ class MagicTableViewCell: UITableViewCell {
     private lazy var stackViewVertical: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
-        stackView.spacing = 10
         stackView.alignment = .leading
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
@@ -42,12 +41,7 @@ class MagicTableViewCell: UITableViewCell {
         return label
     }()
 
-    private lazy var accessoryTableViewCell: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-
+    
     // MARK: - Lifecycle
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -65,7 +59,6 @@ class MagicTableViewCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         self.accessoryType = .none
-        accessoryTableViewCell.removeFromSuperview()
     }
 
     override func layoutSubviews () {
@@ -74,19 +67,19 @@ class MagicTableViewCell: UITableViewCell {
         NSLayoutConstraint.activate([
             stackViewVertical.topAnchor.constraint(
                 equalTo: contentView.topAnchor,
-                constant: Metric.stackViewHorizontalTopConstraintContentView
+                constant: Metric.stackViewVerticalTopConstraintContentView
             ),
             stackViewVertical.bottomAnchor.constraint(
                 equalTo: contentView.bottomAnchor,
-                constant: Metric.stackViewHorizontalBottomConstraintContentView
+                constant: Metric.stackViewVerticalBottomConstraintContentView
             ),
             stackViewVertical.leadingAnchor.constraint(
                 equalTo: contentView.leadingAnchor,
-                constant: Metric.stackViewHorizontalLeadingConstraintContentView
+                constant: Metric.stackViewVerticalLeadingConstraintContentView
             ),
             stackViewVertical.trailingAnchor.constraint(
                 equalTo: contentView.trailingAnchor,
-                constant: Metric.stackViewHorizontalTrailingConstraintContentView
+                constant: Metric.stackViewVerticalTrailingConstraintContentView
             )
         ])
     }
@@ -104,9 +97,9 @@ class MagicTableViewCell: UITableViewCell {
 
 extension MagicTableViewCell {
     enum Metric {
-        static let stackViewHorizontalTopConstraintContentView: CGFloat = 6
-        static let stackViewHorizontalBottomConstraintContentView: CGFloat = -6
-        static let stackViewHorizontalLeadingConstraintContentView: CGFloat = 10
-        static let stackViewHorizontalTrailingConstraintContentView: CGFloat = -10
+        static let stackViewVerticalTopConstraintContentView: CGFloat = 6
+        static let stackViewVerticalBottomConstraintContentView: CGFloat = -6
+        static let stackViewVerticalLeadingConstraintContentView: CGFloat = 10
+        static let stackViewVerticalTrailingConstraintContentView: CGFloat = -10
     }
 }

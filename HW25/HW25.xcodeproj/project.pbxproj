@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2D04ED259BD1F47ECA35E2FA /* Pods_HW25.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A1AB308177CE594C10C209 /* Pods_HW25.framework */; };
+		9D960657286DD2D800FA76A5 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D960656286DD2D800FA76A5 /* ModalViewController.swift */; };
 		9DBD4831286D8A3400CA6B6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD4830286D8A3400CA6B6D /* AppDelegate.swift */; };
-		9DBD4835286D8A3400CA6B6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD4834286D8A3400CA6B6D /* ViewController.swift */; };
+		9DBD4835286D8A3400CA6B6D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD4834286D8A3400CA6B6D /* MainViewController.swift */; };
 		9DBD483A286D8A3500CA6B6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBD4839286D8A3500CA6B6D /* Assets.xcassets */; };
 		9DBD483D286D8A3500CA6B6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DBD483B286D8A3500CA6B6D /* LaunchScreen.storyboard */; };
 		9DBD4845286D95CC00CA6B6D /* MagicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD4844286D95CC00CA6B6D /* MagicModel.swift */; };
@@ -18,9 +19,10 @@
 
 /* Begin PBXFileReference section */
 		6248B42D13FE7D972E626C90 /* Pods-HW25.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW25.release.xcconfig"; path = "Target Support Files/Pods-HW25/Pods-HW25.release.xcconfig"; sourceTree = "<group>"; };
+		9D960656286DD2D800FA76A5 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		9DBD482D286D8A3400CA6B6D /* HW25.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW25.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBD4830286D8A3400CA6B6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9DBD4834286D8A3400CA6B6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DBD4834286D8A3400CA6B6D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9DBD4839286D8A3500CA6B6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DBD483C286D8A3500CA6B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DBD483E286D8A3500CA6B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,9 +75,10 @@
 			isa = PBXGroup;
 			children = (
 				9DBD4830286D8A3400CA6B6D /* AppDelegate.swift */,
-				9DBD4834286D8A3400CA6B6D /* ViewController.swift */,
-				9DBD4844286D95CC00CA6B6D /* MagicModel.swift */,
+				9DBD4834286D8A3400CA6B6D /* MainViewController.swift */,
+				9D960656286DD2D800FA76A5 /* ModalViewController.swift */,
 				9DBD4848286D97FC00CA6B6D /* MagicTableViewCell.swift */,
+				9DBD4844286D95CC00CA6B6D /* MagicModel.swift */,
 				9DBD4839286D8A3500CA6B6D /* Assets.xcassets */,
 				9DBD483B286D8A3500CA6B6D /* LaunchScreen.storyboard */,
 				9DBD483E286D8A3500CA6B6D /* Info.plist */,
@@ -206,7 +209,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DBD4845286D95CC00CA6B6D /* MagicModel.swift in Sources */,
-				9DBD4835286D8A3400CA6B6D /* ViewController.swift in Sources */,
+				9D960657286DD2D800FA76A5 /* ModalViewController.swift in Sources */,
+				9DBD4835286D8A3400CA6B6D /* MainViewController.swift in Sources */,
 				9DBD4849286D97FC00CA6B6D /* MagicTableViewCell.swift in Sources */,
 				9DBD4831286D8A3400CA6B6D /* AppDelegate.swift in Sources */,
 			);
