@@ -11,6 +11,7 @@ final class MainViewController: UIViewController {
     private lazy var magicTableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .insetGrouped)
         tableView.register(MagicTableViewCell.self, forCellReuseIdentifier: MagicTableViewCell.identifier)
+        tableView.rowHeight = 90 // если убрать, то размер ячеек изначально по умолчанию 
         tableView.delegate = self
         tableView.dataSource = self
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -25,8 +26,6 @@ final class MainViewController: UIViewController {
         setupHierarchy()
         setupLayout()
         requestUrl()
-//        magicTableView.estimatedRowHeight = 68.0
-//        magicTableView.rowHeight = UITableView.automaticDimension
     }
     
     // MARK: - Settings
